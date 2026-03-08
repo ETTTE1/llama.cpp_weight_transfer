@@ -17,6 +17,7 @@ RUN apt-get update && \
     cmake \
     python3 \
     python3-pip \
+    python3-dev \
     git \
     libssl-dev \
     libgomp1
