@@ -55,6 +55,7 @@ RUN apt-get update \
     git \
     python3 \
     python3-pip \
+    python3-dev \
     python3-wheel \
     && pip install --break-system-packages --upgrade setuptools \
     && pip install --break-system-packages -r requirements.txt \
