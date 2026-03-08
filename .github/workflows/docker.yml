@@ -196,9 +196,6 @@ jobs:
           #cache-to: type=local,dest=/tmp/.buildx-cache
           #cache-from: type=local,src=/tmp/.buildx-cache
           # using registry cache (no storage limit)
-          cache-from: type=registry,ref=${{ steps.tag.outputs.cache_output_tags }}
-          cache-to: type=registry,ref=${{ steps.tag.outputs.cache_output_tags }},mode=max
-
   create_tag:
     name: Create and push git tag
     runs-on: ubuntu-22.04
